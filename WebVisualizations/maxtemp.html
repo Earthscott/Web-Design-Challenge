@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS, Bootswatch theme United -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.6.0/dist/united/bootstrap.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Weather Visualization Dashboard - Maximum Temperature</title>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="page-header">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <a class="navbar-brand" href="./index.html">
+                    <i class="bi bi-speedometer2 spacer"></i>Dashboard
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bi bi-graph-up"></i>Plots
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="./maxtemp.html">
+                                    <i class="bi bi-thermometer-high"></i>Maximum Temperature
+                                </a>
+                                <a class="dropdown-item" href="./mintemp.html">
+                                    <i class="bi bi-thermometer-low"></i>Minimum Temperature
+                                </a>
+                                <a class="dropdown-item" href="./dewpoint.html">
+                                    <i class="bi bi-droplet"></i>Dewpoint Temperature
+                                </a>
+                                <a class="dropdown-item" href="./humidity.html">
+                                    <i class="bi bi-moisture"></i>Relative Humidity
+                                </a>
+                                <a class="dropdown-item" href="./cloud.html">
+                                    <i class="bi bi-clouds"></i>Cloudiness
+                                </a>
+                                <a class="dropdown-item" href="./wind.html">
+                                    <i class="bi bi-wind"></i>Wind
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./comparison.html">
+                                <i class="bi bi-grid-fill"></i>Comparison
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./data.html">
+                                <i class="bi bi-table"></i>Data
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="page-body container">
+            <div class="row">
+                <div class="col-md-8 col-lg-9">
+                    <h4>Maximum Temperature vs. Latitude</h4>
+                    <p>
+                        Maximum daily temperatures are variable, but decrease towards the poles and increase 
+                        towards the equator. Data are more concentrated between 30<sup>o</sup> N to 
+                        60<sup>o</sup> N, reflecting a larger proportion of the world's land area in 
+                        North America, Europe, and Asia.
+                    </p>
+                    <div class="mb-5" style="width: auto; max-width: 600px;">
+                        <img src="images/MaxTemp_Global.png" alt="Max Temp vs Latitude">
+                    </div>                        
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h5 style="text-align: center;">Visualizations</h5>
+                    <a href="./maxtemp.html">
+                        <div class="card text-center text-white bg-success mb-3" style="width: auto;">
+                            <div class="p-1" style="background-color: #5F5B42;">Maximum Temperature</div>
+                            <img src="images/MaxTemp_Global.png" class="card-img-bottom" alt="Max Temp">
+                        </div>
+                    </a>
+                    <a href="./mintemp.html">
+                        <div class="card text-center text-white bg-primary mb-3" style="width: auto;">
+                            <div class="p-1">Minimum Temperature</div>
+                            <img src="images/MinTemp_Global.png" class="card-img-bottom" alt="Min Temp">
+                        </div>
+                    </a>
+                    <a href="./dewpoint.html">
+                        <div class="card text-center text-white bg-primary mb-3" style="width: auto;">
+                            <div class="p-1">Dew Point Temperature</div>
+                            <img src="images/DewPoint_Global.png" class="card-img-bottom" alt="Dew Point">
+                        </div>
+                    </a>
+                    <a href="./humidity.html">
+                        <div class="card text-center text-white bg-primary mb-3" style="width: auto;">
+                            <div class="p-1">Relative Humidity</div>
+                            <img src="images/RelHum_Global.png" class="card-img-bottom" alt="Humidity">
+                        </div>
+                    </a>
+                    <a href="./cloud.html">
+                        <div class="card text-center text-white bg-primary mb-3" style="width: auto;">
+                            <div class="p-1">Cloud Cover</div>
+                            <img src="images/Cloud_Global.png" class="card-img-bottom" alt="Cloud">
+                        </div>
+                    </a>
+                    <a href="./wind.html">
+                        <div class="card text-center text-white bg-primary mb-3" style="width: auto;">
+                            <div class="p-1">Wind Speed</div>
+                            <img src="images/WindSpeed_Global.png" class="card-img-bottom" alt="Wind">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="page-footer footer">
+            <span>Design by <a href="mailto:earthscott@gmail.com" style="color: white;">Scott Job</a>, Indiana Bones Web Services</span>
+        </footer>  
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
